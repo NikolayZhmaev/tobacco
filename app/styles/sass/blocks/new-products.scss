@@ -1,0 +1,79 @@
+.new-products {
+	width: 100%;
+	height: 810px;
+}
+
+.new-products__tabs {
+	text-align: center;
+}
+
+.tabs__nav {
+	display: inline-flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 38px;
+	width: 700px;	
+	
+	li {
+		list-style: none;
+		padding: 0;		
+	}
+
+	a {
+		font-weight: 400;
+		font-size: 12px;
+		color: $textcolor;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all 0.3s;
+	}
+
+	a:hover{
+		color: $accent;
+		transition: all 0.3s;
+	}
+}
+
+.products__slider {
+	display: flex;
+	justify-content: left;
+	width: 100%;
+}
+
+.tabs__items {
+	width: 100%;
+}
+
+.tabs__item {
+	width: 100%;
+}
+
+.item {
+	margin-left: 11px;
+	margin-right: 11px;
+}
+
+
+.castomDotsClass {
+	margin-top: 35px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.castomDotsClass button {
+	border: none;
+	font-size: 0;
+	width: 6px; 
+	height: 6px; 
+	border-radius: 50%;
+	margin: 10px;
+	background-color: #687688;
+	outline: none;
+	padding: 0;
+}
+
+.castomDotsClass li[class="slick-active"] button {
+	background-color: $accent;
+}

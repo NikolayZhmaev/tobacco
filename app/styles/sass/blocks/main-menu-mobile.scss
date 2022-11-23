@@ -1,0 +1,138 @@
+.main-menu__mobile {
+	height: 600px;
+	// height: 80px;
+	padding-top: 20px;
+	position: relative;
+}
+
+.hamburger {
+	position: absolute;
+	display: inline-block;
+	width: 28px;
+	height: 17px;
+	z-index: 200;
+
+	span {
+		display: block;
+		height: 2px;
+		width: 100%;
+		background-color: #fff;
+		margin-bottom: 5px;
+		transition: 0.5s all;
+	}
+}
+
+.hamburger_active {
+	span {
+		margin-bottom: -3px;
+	}
+
+	span:nth-child(1) {
+		transform: translateY(5px) rotate(-45deg);
+	}
+
+	span:nth-child(2) {
+		display: none;
+	}
+
+	span:nth-child(3) {
+		transform: translateY(5px) rotate(45deg);
+	}
+
+}
+
+.logo__mobile {
+	display: inline-block;
+
+	img {
+		width: 226px;
+	}
+}
+
+.menu-mobile__wrapper {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 50;
+	width: 100vw;
+	height: 100vh;
+	background-color:rgba($color: #000, $alpha: 0.4);
+	transition: 0.8s all;
+}
+
+.active {
+	left: 0;
+}
+
+.menu-mobile {
+	position: absolute;
+	top: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 378px;
+	height: 100vh;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	background-color: #251448;
+	z-index: 100;
+}
+
+.menu-mobile__line {
+	width: 100%;
+	height: 1px;
+	background-color: rgba($color: $textcolor, $alpha: 0.4);
+}
+
+.menu-mobile__items {
+	margin-top: 37px;
+	margin-bottom: 37px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 48px;
+
+	li {
+		list-style-type: none;
+		position: relative;
+		display: block;
+
+		a {
+			color: $textcolor;
+			text-decoration: none;
+		}
+	}
+}
+
+.menu-mobile__contacts {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.menu-mobile__address,
+.menu-mobile__phone,
+.menu-mobile__working,
+.menu-mobile__manufacturer {
+	font-weight: 500;
+	font-size: 16px;
+	color: rgba($color: $textcolor, $alpha: 0.4);
+	margin-bottom: 15px;
+}
+
+.menu-mobile__wraper_soc {
+	width: 185px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 29px;
+	margin-bottom: 44px;
+	a{
+		text-decoration: none;
+	}
+
+	span {
+		font-size: 21px;
+	}
+}

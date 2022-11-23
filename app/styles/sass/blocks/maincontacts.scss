@@ -1,0 +1,56 @@
+.contacts {
+	height: 40px;
+	width: 100%;
+	color: rgba($color: $textcolor, $alpha: 0.3);
+	border-bottom: 1px solid;
+	text-align: center;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 40px;
+
+	a {
+		color: rgba($color: $textcolor, $alpha: 0.3);
+	}
+
+	a:hover {
+		color: rgba($color: $textcolor, $alpha: 1);
+		
+		.icon-instagram:before,
+		.icon-whatsapp:before,
+		.icon-vk:before,
+		.icon-telegram:before {
+			color: rgba(255, 255, 255, 1);
+		}
+	}
+}
+
+.contacts__address {
+	display: inline-block;
+}
+
+.contacts__phone {
+	margin-left: 15px;
+}
+
+.contacts__text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wraper_soc {
+	display: flex;
+	justify-content: space-between;
+	width: 120px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.contacts__socnet {
+	display: inline-block;
+	width: 85px;
+	display: flex;
+	justify-content: space-between;
+}

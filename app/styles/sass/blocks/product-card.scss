@@ -1,0 +1,157 @@
+.cigarettes-card,
+.vaporizers-card,
+.tobacco-hookah-card,
+.chewing-tobacco-card {
+	width: 275px;
+	height: 490px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.animated__line {
+	position: absolute;
+	top: 30px;
+	height: 0.5px;
+	width: 0;
+	background-color: $textcolor;	
+}
+
+.cigarettes-card:hover,
+.vaporizers-card:hover,
+.tobacco-hookah-card:hover,
+.chewing-tobacco-card:hover {
+	img {
+		animation: bounce 1s;
+	}
+
+	.animated__line {
+		animation: line-show 1.5s;
+	}
+}
+
+
+
+@keyframes line-show {
+	0% {
+		width: 0px;
+		left: 0;		
+	}	
+
+	30% {
+		width: 100%;
+		box-shadow: 0px 2px 3px 2px rgba(255, 255, 255, 0.25);
+		left: 0;		
+	}
+
+	100% {
+		width: 0;
+		left: 100%;		
+	}
+}
+
+.product__img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 275px;
+	height: 285px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+
+}
+
+.product__subtitle {
+	position: relative;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.product__description {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
+	min-height: 80px;
+}
+
+.product__structure {
+	display: flex;
+	justify-content: center;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	color: rgba($color: $textcolor, $alpha: 0.5);
+}
+
+.vertical {
+	flex-direction: column;
+}
+
+.structure__nicotine {
+	margin-right: 10px;
+}
+
+.product_price {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.product__packing {
+	height: 50px;
+	width: 100%;
+	font-weight: 400;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: rgba($color: $textcolor, $alpha: 0.5);
+}
+
+.pacing__left_img {
+	width: 26px;
+	height: 26px;
+	margin-right: 7px;
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.pacing__right_img {
+	width: 13px;
+	height: 20px;
+	margin-right: 15px;
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.description__line {
+	width: 230px;
+	height: 1px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: rgba($color: $textcolor, $alpha: 0.5);
+}
+
+.pacing__left,
+.pacing__right {
+	display: flex;
+	align-items: center;
+}
+
+.structure__strength,
+.structure__weight,
+.structure__packing {
+	color: $textcolor;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.structure__weight {
+	margin-left: 10px;
+}

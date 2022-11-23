@@ -1,0 +1,171 @@
+.gallery{
+	margin-top: 50px;
+	width: 100%;
+	height: 582px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery__item {
+	img {
+		transition: transform 0.35s;
+	}	
+}
+
+.gallery__item:hover {
+	box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.25);
+	
+	img {
+		transform: scale(1.1);
+		overflow: hidden;
+		transition: transform 0.35s;
+	}
+}
+
+.gallery__left,
+.gallery__right {
+	width: 584px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;	
+}
+
+.gallery__right {
+	flex-direction: column;
+}
+
+.gallery__top {
+	width: 100%;
+	height: 281px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery__first,
+.gallery__second {
+	width: 277px;
+	height: 580px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	overflow: hidden;
+	border-radius: 12px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gallery_v__img {
+	display: flex;
+	justify-content: end;
+
+}
+
+.gallery_v__footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 120px;
+	padding-left: 20px;
+	
+	.gallery__subtitle {
+		height: 60px;
+		margin-bottom: 16px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 30px;
+		text-transform: uppercase;
+		display: flex;
+		align-items:flex-end;
+		text-align: left;	
+	}
+	
+	.gallery__brands {
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+		font-size: 12px;
+		color: $accent;
+	}
+	
+}
+
+.gallery_s__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
+	img {
+		object-fit: contain;
+	}
+
+}
+
+.gallery_s__footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 55px;
+	padding-left: 20px;
+	
+	.gallery__subtitle {
+		height: 60px;
+		margin-bottom: 13px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+		text-transform: uppercase;
+		display: flex;
+		align-items:flex-end;
+		
+	}
+	
+	.gallery__brands {
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+		font-size: 12px;
+		color: $accent;
+	}
+	
+}
+
+
+
+.brands__separator {
+	background-color: $accent;
+	width: 3px;
+	height: 3px; 
+	border-radius: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.brands__separator {
+	background-color: $accent;	
+}
+
+
+
+.gallery__third,
+.gallery__fourth {
+	width: 277px;
+	height: 100%;
+	border-radius: 12px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.gallery__fifth {
+	width: 585px;
+	height: 270px;
+	border-radius: 12px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.gallery_h__img {
+	padding-top: 23px;
+	height: 200px;
+}
