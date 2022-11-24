@@ -1,1 +1,27 @@
 @import '../../../../node_modules/slick-carousel/slick/slick.scss';
+
+//слайдер брендов
+
+.brand__slider {
+	height: 78px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+
+}
+
+.slick-track {
+	display: flex;
+}
+
+.slick-track .slick-slide {
+	display: flex;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.brand__slider .slick-slide {
+	margin-left: 35px;
+}

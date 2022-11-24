@@ -35,8 +35,6 @@
 		width: 100%;
 		height: 260px;
 	}
-
-
 }
 
 @media (max-width: 1208px) {
@@ -305,6 +303,10 @@
 		padding-bottom: 27px;
 	}
 
+	.brands__static {
+		width: 945px;
+	}
+
 	.chewing-tobacco-card,
 	.cigarettes-card,
 	.tobacco-hookah-card,
@@ -351,6 +353,186 @@
 	}
 
 	.main-menu {
+		display: none;
+	}
+
+	.promo {
+		display: none;
+	}
+
+	.promo__medium {
+		display: block;
+	}
+
+	.brands__static {
+		display: none;
+	}
+
+	.brand__slider {
+		display: flex !important;
+	}
+
+	.about-company {
+		display: none;
+	}
+
+	.about-mobile {
+		display: block;
+	}
+
+	.cooperation {
+		height: 480px;
+	}
+
+	.warning__wrapper {
+		width: 580px;
+	}
+
+	.warning__text {
+		display: none;
+	}
+
+	.warning__text__min {
+		display: block;
+	}
+
+	.contacts__left,
+	.contacts__center,
+	.contacts__right {
+		display: none;
+	}
+
+	.contacts__right__min {
+		display: block;
+	}
+
+	.contacts__wrapper {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 742px) {
+	.container {
+		width: 356px;
+	}
+
+	.promo__medium {
+		display: none;
+	}
+
+	.promo__mobile {
+		display: block;
+	}
+
+	.new-products {
+		height: 650px !important;
+	}
+
+	.tabs__nav {
+		display: none;
+	}
+
+	.tabs-mobile__nav {
+		display: inline-flex;
+	}
+
+	.cigarettes-card,
+	.vaporizers-card,
+	.tobacco-hookah-card {
+		width: 172px !important;
+		height: 385px !important;
+	}
+
+	.product__img {
+		background-size: 159px auto !important;
+		height: 160px;
+
+		img {
+			width: 114px;
+		}
+
+		.img_tob {
+			width: 140px;
+		}		
+	}
+
+	.product__subtitle {
+		margin-top: 28px;
+		font-size: 16px;
+	}
+
+	.product__structure {
+		flex-direction: column;
+		align-items:center;
+		justify-content: center;
+
+		.structure__nicotine {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+
+	.about-mobile {
+		height: 1405px;
+	}
+
+	.about-mobile__top
+	.about-mobile__line {
+		width: 100%;
+	}
+
+	.about-medium__statistics {
+		display: none;
+	}
+
+	.about-mobile__statistics {
+		display: inline-flex;
+
+		
+		.statistics__item {
+			width: 130px;
+		}
+	}
+
+	.about-mobile__img {
+		display: inline-flex;
+	}
+
+	.statistics__top,
+	.statistics__middle,
+	.statistics__bottom {
+		align-items: start;
+	}
+
+	.card__footer__text {
+		text-align: center;
+	}
+
+	.cooperation {
+		height: 810px;
+	}
+
+	.cooperation__icons {
+		display: none;
+	}
+
+	.cooperation-mobile__icons {
+		display: inline-flex;
+	}
+
+	.btn-up {
+		display: none;
+	}
+
+	footer {
+		height: 92px;
+	}
+
+	.contacts__wrapper {
+		width: 300px;
+	}
+
+	.footer__warning {
 		display: none;
 	}
 }

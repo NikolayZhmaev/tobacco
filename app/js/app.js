@@ -82,12 +82,38 @@ document.addEventListener('DOMContentLoaded', () => {
 		// Клики по вкладкам.
 		$('#new-products__tabs .tabs__nav a').click(function () {
 			tab.hide();
-			tab.filter(this.hash).show();
-			// $('#new-products__tabs .tabs__nav a').removeClass('active');
-			// $(this).addClass('active');
+			tab.filter(this.hash).show();			
+			return false;
+		}).filter(':first').click();
+
+		$('#new-products__tabs .tabs-mobile__nav a').click(function () {
+			tab.hide();
+			tab.filter(this.hash).show();			
 			return false;
 		}).filter(':first').click();
 	});
+
+	$('.brand__slider').slick({
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 800,       
+        variableWidth: true,
+		centerMode: true,
+    });	
+
+	
+	$('.brand__slider').on('wheel', (function(e) {
+        e.preventDefault();
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+	}));
 
 	
 

@@ -7,7 +7,8 @@
 	text-align: center;
 }
 
-.tabs__nav {
+.tabs__nav,
+.tabs-mobile__nav {
 	display: inline-flex;
 	justify-content: space-between;
 	margin-top: 40px;
@@ -32,6 +33,11 @@
 		color: $accent;
 		transition: all 0.3s;
 	}
+}
+
+.tabs-mobile__nav {
+	display: none;
+	width: 100%;
 }
 
 .products__slider {

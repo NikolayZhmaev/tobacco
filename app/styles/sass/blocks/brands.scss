@@ -18,7 +18,7 @@
 	border-bottom: 1px solid rgba($color: $textcolor, $alpha: 0.3);	
 }
 
-.brands_static {
+.brands__static {
 	height: 70px;
 	width: 995px;
 	display: inline-flex;
@@ -36,6 +36,14 @@
 	}
 
 }
+
+.brand__slider {
+	display: none !important;
+	opacity: 0.4;
+}
+
+
+
 
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
