@@ -1,0 +1,51 @@
+.product-block {
+	width: 100%;
+	padding-top: 70px;
+}
+
+.block__header {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $accent;
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 70px;
+
+}
+
+.block__header_text {
+	margin: 0 25px;
+}
+
+.block__header_line {
+	height: 1px;
+	width: 224px;
+	background-color: $accent;
+}
+
+.product__items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.item {
+		margin-bottom: 70px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.filling-empty-space-childs {
+		width: 278px; /*the width of the images in this example*/
+		height: 0; /*Important! for the divs to collapse should they fall in a new row*/
+	}
+}
+
+.product__line {
+	width: 100%;
+	height: 1px;
+	background-color: rgba($color: $textcolor, $alpha: 0.4);
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+
