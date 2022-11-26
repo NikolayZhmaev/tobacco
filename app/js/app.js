@@ -116,22 +116,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	const div = document.createElement("div");
-	div.classList.add('filling-empty-space-childs');	
+	div.classList.add('filling-empty-space-childs');
 
 
-	if ($('.container').width() == 1200) {
+	if ($(window).width() < 1275) {
+		$('.filling-empty-space-childs').remove();
+
+		$('.product__items').each(function () {			
+			$('.product__items').each(function () {
+				let quantity = $(this).find('.item').length;
+				if (quantity > 1) {
+					switch (quantity % 3) {
+						case 2:
+							console.log('это блок малого экрана 2');
+							$(this).append('<div class="filling-empty-space-childs"></div>');
+							break;
+					}
+				}
+			});
+		});
+
+	} else if ($(window).width() > 1275) {
+		$('.filling-empty-space-childs').remove();
 		$('.product__items').each(function () {
 			let quantity = $(this).find('.item').length;
-			
+			console.log("сейчас > 1130");
 			if (quantity > 1) {
-				switch (quantity%4) {
-					case 2:						
+				switch (quantity % 4) {
+					case 2:
+						console.log('это блок большого экрана 2');
 						$(this).append('<div class="filling-empty-space-childs"></div>\
 						<div class="filling-empty-space-childs"></div>\
-						');						
+						');
 						break;
 					case 3:
-						$(this).append('<div class="filling-empty-space-childs"></div>');	
+						console.log('это блок большого экрана 3');
+						$(this).append('<div class="filling-empty-space-childs"></div>');
 						break;
 				}
 			}
