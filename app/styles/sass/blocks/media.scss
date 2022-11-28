@@ -334,6 +334,12 @@
 	.about-company {
 		background-size: auto 1114px;
 	}
+
+	.partners-slider__wrapper {
+		.item {
+			margin-left: 5px !important;
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -417,6 +423,22 @@
 	.subtitle__page {
 		font-size: 26px;
 		margin-top: 74px;
+	}
+
+	.partners-promo {
+		display: none;
+	}
+
+	.partners-promo__middle {
+		display: flex;
+	}
+
+	.partners-slider {
+		display: none;
+	}
+
+	.partners-slider__middle {
+		display: flex;
 	}
 }
 
@@ -604,8 +626,51 @@
 
 		.chewing-tobacco-card {
 			height: 317px !important; 
+		}		
+	}
+
+	.partners-promo__middle {
+		height: 845px;
+
+		.partners__card{
+			align-items: start;
+		}		
+
+		.card__subtitle {
+			font-size: 16px;
 		}
 
-		
+		.about-company__img {
+			img {
+				width: 340px;
+			}
+		}
 	}
+
+	.partners-slider__middle {
+
+		margin-bottom: 20px;
+
+		.card__subtitle {
+			font-size: 20px;
+		}
+
+		.item {
+			width: 350px !important;
+		}
+
+		.about-company__img {
+			height: 333px;
+			background-size: 355px auto!important;
+
+			img {
+				width: 330px;
+			}
+
+			.partners__img_h {
+				height: 260px;
+			}
+		}
+	}
+	
 }

@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if ($(window).width() < 1275) {
 		$('.filling-empty-space-childs').remove();
 
-		$('.product__items').each(function () {			
+		$('.product__items').each(function () {
 			$('.product__items').each(function () {
 				let quantity = $(this).find('.item').length;
 				if (quantity > 1) {
@@ -157,6 +157,23 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	}
+
+	$('.partners-slider__wrapper').slick({
+		arrows: false,
+		speed: 800,
+		dots: true,
+		dotsClass: 'castomDotsClass',
+	});
+
+
+	$('.partners-slider__wrapper').on('wheel', (function (e) {
+		e.preventDefault();
+		if (e.originalEvent.deltaY < 0) {
+			$(this).slick('slickNext');
+		} else {
+			$(this).slick('slickPrev');
+		}
+	}));
 
 
 
