@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	$('.hamburger').click(function () {
 		$(this).toggleClass('hamburger_active');
 		$('.menu-mobile__wrapper').toggleClass('active');
+		$('body').toggleClass('stop-scroll');
 	});
 
 
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	$(function () {
 		$(window).scroll(function () {
-			if ($(window).scrollTop() > 200) {
+			if ($(window).scrollTop() > 280) {
 				$('.main-menu').addClass('main-menu__scroll');
 			} else {
 				$('.main-menu').removeClass('main-menu__scroll');
@@ -62,16 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 			$(this).slick('setPosition');
 		}
-	});
-
-	$('.products__slider').on('wheel', (function (e) {
-		e.preventDefault();
-		if (e.originalEvent.deltaY < 0) {
-			$(this).slick('slickPrev');
-		} else {
-			$(this).slick('slickNext');
-		}
-	}));
+	});	
 
 
 	$(function () {
@@ -102,17 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplaySpeed: 800,
 		variableWidth: true,
 		centerMode: true,
-	});
-
-
-	$('.brand__slider').on('wheel', (function (e) {
-		e.preventDefault();
-		if (e.originalEvent.deltaY < 0) {
-			$(this).slick('slickNext');
-		} else {
-			$(this).slick('slickPrev');
-		}
-	}));
+	});	
 
 
 	const div = document.createElement("div");
@@ -127,8 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				let quantity = $(this).find('.item').length;
 				if (quantity > 1) {
 					switch (quantity % 3) {
-						case 2:
-							console.log('это блок малого экрана 2');
+						case 2:							
 							$(this).append('<div class="filling-empty-space-childs"></div>');
 							break;
 					}
@@ -139,18 +120,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	} else if ($(window).width() > 1275) {
 		$('.filling-empty-space-childs').remove();
 		$('.product__items').each(function () {
-			let quantity = $(this).find('.item').length;
-			console.log("сейчас > 1130");
+			let quantity = $(this).find('.item').length;			
 			if (quantity > 1) {
 				switch (quantity % 4) {
-					case 2:
-						console.log('это блок большого экрана 2');
+					case 2:						
 						$(this).append('<div class="filling-empty-space-childs"></div>\
 						<div class="filling-empty-space-childs"></div>\
 						');
 						break;
-					case 3:
-						console.log('это блок большого экрана 3');
+					case 3:						
 						$(this).append('<div class="filling-empty-space-childs"></div>');
 						break;
 				}
@@ -163,60 +141,36 @@ document.addEventListener('DOMContentLoaded', () => {
 		speed: 800,
 		dots: true,
 		dotsClass: 'castomDotsClass',
+	});	
+
+
+	// подгрузка товаров
+	$(document).ready(function () {
+		$('.product-block').each(function () {
+			let button = $(this).find('.button_show');
+			let listItem = $(this).find('.product__items .item');
+			let numInList = listItem.length;			
+			
+			if (numInList > 8) {
+				let numToShow = 8;
+				listItem.hide();
+				if (numInList > numToShow) {
+					button.show();
+				}
+				$(this).find('.product__items .item').slice(0, numToShow).show();
+				button.click(function () {
+					var showing = listItem.filter(':visible').length;
+					listItem.slice(showing - 1, showing + numToShow).fadeIn();
+					var nowShowing = listItem.filter(':visible').length;
+					if (nowShowing >= numInList) {
+						button.hide();
+					}
+				});
+			} else {
+				button.hide();
+			}
+		});
 	});
-
-
-	$('.partners-slider__wrapper').on('wheel', (function (e) {
-		e.preventDefault();
-		if (e.originalEvent.deltaY < 0) {
-			$(this).slick('slickNext');
-		} else {
-			$(this).slick('slickPrev');
-		}
-	}));
-
-
-
-	// $.each(product__items, function(index, value=product__items.querySelectorAll('.item')) {
-	// 	quantity = value.lenght;
-	// 	console.log(quantity);
-	// 	if (quantity > 1) {
-	// 		switch (quantity) {
-	// 			case 2:
-	// 				index.append(div);
-	// 				index.append(div);
-	// 				break;
-	// 			case 3:
-	// 				index.append(div);					
-	// 				break;
-	// 		}
-	// 	}
-	// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	// Custom JS
 

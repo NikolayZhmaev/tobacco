@@ -7,6 +7,10 @@
 }
 
 .gallery__item {
+	a {
+		text-decoration: none;
+		color: $textcolor
+	}
 	img {
 		transition: transform 0.35s;
 	}	

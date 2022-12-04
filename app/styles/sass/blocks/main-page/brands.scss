@@ -45,7 +45,7 @@
 
 
 
-@keyframes bounce {
+@keyframes bounce {	
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
@@ -60,4 +60,22 @@
 		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
+}
+
+@keyframes bounce_mobile {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+ 
+	40% {
+		-webkit-transform: translateY(-7px);
+		transform: translateY(-7px);
+	}
+ 
+	80% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+	
 }

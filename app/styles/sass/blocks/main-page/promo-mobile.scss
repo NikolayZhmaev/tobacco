@@ -57,10 +57,15 @@
 	background-repeat: no-repeat;
 
 	.gallery_sm__img {
+		padding-top: 30px;
 		height: 113px;
 
 		img {
-			width: 109px;
+			width: 130px;
+		}
+
+		.img_hm {
+			width: 116px;
 		}
 	}
 
@@ -68,7 +73,12 @@
 		padding-left: 3px;
 		justify-content: center;
 		height: 67px;
-
 	}
 
+}
+
+.gallery-mobile__fifth {
+	img {
+		width: 165px;
+	}
 }

@@ -9,18 +9,19 @@
 	line-height: 40px;
 
 	a {
-		color: rgba($color: $textcolor, $alpha: 0.3);
+		color: rgba($color: $accent, $alpha: 0.6);
+
+		img {
+			opacity: 0.5;
+		}
 	}
 
 	a:hover {
 		color: rgba($color: $textcolor, $alpha: 1);
-		
-		.icon-instagram:before,
-		.icon-whatsapp:before,
-		.icon-vk:before,
-		.icon-telegram:before {
-			color: rgba(255, 255, 255, 1);
-		}
+
+		img {
+			opacity: 1;
+		}		
 	}
 }
 
@@ -54,3 +55,4 @@
 	display: flex;
 	justify-content: space-between;
 }
+

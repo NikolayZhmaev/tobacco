@@ -9,40 +9,9 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	
-
 }
 
-.btn-up {
-	position: fixed;
-	background-color: transparent;
-	border: 1px solid #D354FF;
-	right: 20px;
-	bottom: 200px;
-	border-radius: 3px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 40px;
-	height: 40px;
-	background-image: url(../../../images/dist/scroll_up.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: auto;
-
+.stop-scroll {
+	overflow: hidden;
 }
 
-// .btn-up::before {
-// 	content: "";
-// 	width: 40px;
-// 	height: 40px;
-// 	background-image: url(../../../images/dist/scroll_up.png);
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	background-size: auto;
-// }
-
-.btn-up_hide {
-	display: none;
-}

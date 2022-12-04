@@ -13,7 +13,8 @@
 	justify-content: space-between;
 	margin-top: 40px;
 	margin-bottom: 38px;
-	width: 700px;	
+	width: 650px;
+	padding: 0;	
 	
 	li {
 		list-style: none;
@@ -37,7 +38,8 @@
 
 .tabs-mobile__nav {
 	display: none;
-	width: 100%;
+	width: 280px;
+	
 }
 
 .products__slider {
@@ -66,6 +68,7 @@
 	display: flex;
 	justify-content: center;
 	list-style: none;
+	padding: 0;
 }
 
 .castomDotsClass button {

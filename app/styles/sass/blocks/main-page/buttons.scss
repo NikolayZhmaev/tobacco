@@ -28,17 +28,53 @@
 	width: 190px;
 	height: 50px;
 	font-size: 12px;
+
 	span {
 		margin-left: 10px;
 	}
 
 	.icon-telegram:before {
-		color: $accent;		
+		color: $accent;
 	}
 
 	&:hover {
 		.icon-telegram:before {
-			color: #031431;			
+			color: #031431;
 		}
 	}
+}
+
+.button_show {
+	border: none;
+	
+	height: 24px;
+	background-color: transparent;
+	color: $accent;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.btn-up {
+	position: fixed;
+	background-color: transparent;
+	border: 1px solid #D354FF;
+	right: 20px;
+	bottom: 200px;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;	
+	background-image: url(../images/dist/scroll_up.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+
+}
+
+.btn-up_hide {
+	display: none;
 }
