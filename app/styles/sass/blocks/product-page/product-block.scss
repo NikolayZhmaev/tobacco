@@ -11,7 +11,7 @@
 	font-weight: 400;
 	font-size: 24px;
 	margin-bottom: 70px;
-	width: 95%;
+	width: 610px;
 
 }
 
@@ -26,8 +26,9 @@
 }
 
 .product__items {
-	display: flex;
-	width: 98%;
+	display: flex;	
+	overflow: hidden;
+	width: 100%;
 	justify-content: space-between;
 	flex-wrap: wrap;
 
@@ -60,11 +61,11 @@
 }
 
 .products_page {
-	background-image: url(../../../../images/dist/products/bg-products.png);
+	background-image: url(../../../../images/dist/products/bg-products.webp);
 	background-repeat: repeat-y;
 	background-position: center;
-	
-	width: 100%;
-	overflow-x:hidden;
+	background-size: contain;	
+	width: 100vw;	
+	position: relative;
 }
 

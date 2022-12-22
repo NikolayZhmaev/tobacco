@@ -166,7 +166,7 @@
 
 		img {
 			width: 170px;
-		}	
+		}
 
 		.img_tob {
 			width: 210px;
@@ -209,7 +209,7 @@
 	}
 
 	.cooperation {
-		height: 440px;
+		height: 670px;
 		padding-top: 20px;
 	}
 
@@ -394,7 +394,7 @@
 	}
 
 	.cooperation {
-		height: 480px;
+		height: 712px;
 	}
 
 	.warning__wrapper {
@@ -456,6 +456,16 @@
 			margin-bottom: 30px;
 		}
 	}
+
+	footer {
+		height: 155px;
+
+		.footer__contacts {
+			height: 85px;
+		}
+	}
+
+	
 }
 
 @media (max-width: 742px) {
@@ -501,7 +511,7 @@
 
 		.img_tob {
 			width: 140px;
-		}		
+		}
 	}
 
 	.cigarettes-card {
@@ -576,7 +586,7 @@
 	.cooperation {
 		margin-top: 20px;
 		margin-bottom: 20px;
-		height: 810px;
+		height: 1100px;
 		padding: 25px 0;
 	}
 
@@ -594,7 +604,7 @@
 	}
 
 	footer {
-		height: 92px;
+		height: 86px;
 	}
 
 	.contacts__wrapper {
@@ -609,6 +619,10 @@
 		font-size: 16px;
 	}
 
+	.block__header {
+		width: 95%;
+	}
+
 	.block__header_text {
 		font-size: 18px;
 		margin: 0 20px;
@@ -620,8 +634,13 @@
 	}
 
 	.product__items {
+		padding-left: 5px;
+		padding-right: 5px;
+
+		margin: 0;
+
 		.item {
-			width: 172px;
+			width: 166px;
 			margin-bottom: 35px !important;
 		}
 	}
@@ -653,10 +672,14 @@
 		.cigarettes-card,
 		.tobacco-hookah-card,
 		.vaporizers-card {
-			width: 172px !important;
+			width: 166px !important;
 			margin-left: 0 !important;
 			margin-right: 0 !important;
 
+		}
+
+		.filling-empty-space-childs {
+			width: 166px !important;
 		}
 
 		.tobacco-hookah-card {
@@ -668,8 +691,8 @@
 		.chewing-tobacco-card {
 			height: 300px !important;
 
-			.structure__strength {
-				margin-bottom: 6px;
+			.structure__packing {
+				line-height: 2px;
 			}
 		}
 	}
@@ -678,8 +701,6 @@
 		margin-bottom: 35px;
 
 	}
-
-	
 
 	.partners-promo__middle {
 		height: 845px;
@@ -781,6 +802,14 @@
 
 	.button_show {
 		font-size: 14px;
+	}
+
+	.cooperation-brands__wrapper {
+		display: none !important;
+	}
+
+	.cooperation-brands__wrapper-mobile {
+		display: flex !important;
 	}
 }
 

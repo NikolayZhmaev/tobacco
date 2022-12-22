@@ -1,6 +1,6 @@
 .cooperation {
 	width: 100%;
-	height: 500px;
+	height: 720px;
 	padding-top: 60px;
 }
 
@@ -57,4 +57,65 @@
 	.icon__text {
 		line-height: 24px;
 	}
+}
+
+.cooperation-brands {
+	text-align: center;
+
+.cooperation-brands__subheader {
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+
+.cooperation-brands__wrapper {
+	width: 672px;
+	height: 90px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 65px;
+}
+
+.cooperation-brands__top,
+.cooperation-brands__buttom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	img {
+		opacity: 0.4;
+		transition: transform 0.35s;
+	}
+
+	img:hover {
+		opacity: 1;
+		transition: transform 0.35s;
+
+	}
+}
+
+.cooperation-brands__wrapper-mobile {
+	width: 100%;
+	min-height: 180px;	
+	display: none;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 44px;
+	
+
+	img {
+		margin-right: 15px;
+		height: 24px;
+		margin-bottom: 20px;
+		opacity: 0.4;
+		transition: transform 0.35s;
+	}
+
+	img:hover {
+		opacity: 1;
+		transition: transform 0.35s;
+	}
+}
+
 }

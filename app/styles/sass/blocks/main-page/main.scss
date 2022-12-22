@@ -8,10 +8,20 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0;
+		
 	text-align: center;
 }
 
 .stop-scroll {
 	overflow: hidden;
 }
+
+.main-page {
+	background-image: url(../../../../images/dist/products/bg-products.webp);
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: contain;	
+}
+
+
 
